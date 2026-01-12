@@ -1,0 +1,277 @@
+@import url("https://fonts.fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+
+.pt {
+    font-family: "Montserrat", sans-serif;
+}
+
+.pdb80 {
+    padding-bottom: 80px;
+}
+
+#sub_container {
+    margin: 0 auto;
+}
+
+.sub_inner {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sub_tab {
+    margin-bottom: 16px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#tab_menu_se {
+    display: flex;
+    gap: 32px;
+}
+
+#tab_menu_se li {
+    flex: 0 0 auto;
+}
+
+#tab_menu_se li a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 44px;
+    padding: 0 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b7280;
+    transition: color 0.15s ease;
+}
+
+#tab_menu_se li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 999px;
+    transition: background-color 0.15s ease;
+}
+
+#tab_menu_se li.on a {
+    color: #111827;
+    font-weight: 600;
+}
+
+#tab_menu_se li.on a::before {
+    background-color: #007bff;
+}
+
+.sub_tab-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.sub_tit {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.sr_tit2 {
+    margin-bottom: 30px;
+}
+
+.sr_tit2 h1 {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.sr_tit2 .bnum {
+    font-size: 60px;
+    font-weight: 700;
+    color: #eee;
+    margin-right: 15px;
+    line-height: 1;
+    position: relative;
+}
+
+.sr_tit2 h1 p {
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.sr_tit2 .desc {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.sr_col2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.sr_col2 .left {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+
+.sr_col2 .right {
+    flex-basis: 60%;
+    max-width: 60%;
+    padding-top: 30px;
+}
+
+.sr_col2 > p.desc {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.sr_col2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sr_col2 .desc {
+    font-size: 16px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.sr_col4_style2 ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.sr_col4_style2 ul li {
+    border: solid 5px #de2941;
+    padding-top: 20px;
+    height: 157px;
+}
+
+/* 기본: four = 4칸, five = 5칸 (gap 20px 기준으로 정확히 한 줄에 맞게 계산) */
+.sr_col4_style2.four li {
+    flex: 0 0 calc((100% - 60px) / 4);
+    max-width: calc((100% - 60px) / 4);
+}
+
+.sr_col4_style2.five li {
+    flex: 0 0 calc((100% - 80px) / 5);
+    max-width: calc((100% - 80px) / 5);
+}
+
+.sr_col4_style2 ul li span {
+    font-size: 20px;
+    color: #de2941;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    padding-left: 28px;
+}
+
+.sr_col4_style2 ul li span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 30px;
+    height: 1px;
+    background: #de2941;
+}
+
+.sr_col4_style2 li p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.3;
+    margin-top: 50px;
+    padding: 0 5px;
+    word-break: break-word;
+}
+
+.item-des-list {
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.item-des-box {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.des-subject {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0;
+}
+
+.des-con {
+    font-size: 16px;
+    color: #333;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1024px) {
+    .sub_inner {
+        padding: 20px;
+    }
+
+    .sub_tit {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .sr_col2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sr_col2 .left,
+    .sr_col2 .right {
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-top: 0;
+    }
+
+    .sr_col4_style2 ul {
+        gap: 12px;
+    }
+
+    .sr_col4_style2.four li,
+    .sr_col4_style2.five li {
+        flex: 0 0 50%;
+        max-width: 49%;
+    }
+}
+
+/* 1024px 이하에서도 계속 2칸 유지 (모바일 포함) */

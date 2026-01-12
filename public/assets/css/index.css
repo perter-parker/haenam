@@ -1,0 +1,504 @@
+.center-switch {
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: #ffffff;
+}
+
+.center-switch-inner {
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.center-pill-list {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+}
+
+.center-pill {
+    position: relative;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b7280;
+    padding: 6px 0;
+    white-space: nowrap;
+}
+
+.center-pill::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    border-radius: 999px;
+    background-color: transparent;
+}
+
+.center-pill:hover {
+    color: #111827;
+}
+
+.center-pill:hover::after {
+    background-color: #007bff;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0 90px;
+}
+
+.hero--orange {
+    background: linear-gradient(135deg, #0066ff, #4b9e9d);
+    color: #ffffff;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content--wide {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: rgba(0, 102, 255, 0.1);
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    margin: 14px 0 18px;
+    color: inherit;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 28px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.hero-visual {
+    position: relative;
+    min-height: 300px;
+}
+
+.hero-visual--product {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-visual-card {
+    width: 260px;
+    border-radius: 22px;
+    padding: 20px 20px 18px;
+    background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.9), #e0f2fe);
+    color: #111827;
+    box-shadow: 0 24px 45px rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.hero-visual-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0 0 8px;
+}
+
+.hero-visual-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.hero-visual-card li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hero-visual-card li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: var(--color-secondary);
+}
+
+.hero-visual-card li + li {
+    margin-top: 6px;
+}
+
+.cta-band {
+    margin-top: 60px;
+    padding: 60px 40px;
+    border-radius: 32px;
+    background: linear-gradient(135deg, #0066ff, #4b9e9d);
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 40px 70px rgba(6, 63, 157, 0.35);
+}
+
+.cta-band h3 {
+    margin: 0 0 12px;
+    font-size: clamp(28px, 4vw, 40px);
+}
+
+.cta-band p {
+    margin: 0 auto 24px;
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* 심플 섹션 레이아웃 */
+.simple-section {
+    padding: 48px 0;
+    background-color: #f9fafb;
+}
+
+.simple-section--cards {
+    background-color: #ffffff;
+}
+
+.simple-intro {
+    text-align: center;
+}
+
+.simple-intro h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #111827;
+}
+
+.simple-intro p {
+    margin: 0;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+.simple-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.simple-card {
+    border-radius: 18px;
+    padding: 22px 20px 18px;
+    background-color: #ffffff;
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.06);
+}
+
+.simple-card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #111827;
+}
+
+.simple-card p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.simple-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* 2. 카테고리 아이콘 영역 (세듀 중간 아이콘 라인 느낌) */
+.service-icons {
+    border-bottom: 1px solid #f3f4f6;
+    background-color: #fff;
+}
+
+.service-icons-inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 24px;
+    padding: 26px 0;
+}
+
+.service-icon-card {
+    text-align: center;
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #fff7ed;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+/* 3~7. 공통 콘텐츠 섹션 (EVENT / BEST / NEW / VIDEO / E-GUIDE) */
+.content-section {
+    padding: 40px 0;
+    background-color: #f9fafb;
+}
+
+.content-section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.content-header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.filter-tabs {
+    display: inline-flex;
+    gap: 6px;
+    border-radius: 999px;
+    padding: 2px;
+    background-color: #e5e7eb;
+}
+
+.filter-tabs button {
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #6b7280;
+    cursor: pointer;
+}
+
+.filter-tabs button.on {
+    background-color: #ffffff;
+    color: #111827;
+    font-weight: 600;
+}
+
+.arrow-nav button {
+    width: 26px;
+    height: 26px;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background-color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card-row--scroll {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.content-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 18px 18px 16px;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+}
+
+.content-card .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.content-card h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #111827;
+}
+
+.content-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.thumb {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 10px;
+}
+
+.thumb--green {
+    background-color: #bbf7d0;
+}
+
+.thumb--yellow {
+    background-color: #fef3c7;
+}
+
+.thumb--blue {
+    background-color: #bfdbfe;
+}
+
+.thumb--pink {
+    background-color: #fed7e2;
+}
+
+.thumb--purple {
+    background-color: #e9d5ff;
+}
+
+/* VIDEO 카드 */
+.card-row--video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+}
+
+.video-thumb {
+    height: 160px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.video-thumb--warm {
+    background: linear-gradient(135deg, #fb923c, #ec4899);
+}
+
+.video-card h3 {
+    margin: 12px 14px 14px;
+    font-size: 15px;
+    color: #111827;
+}
+
+/* E-GUIDE / E-BOOK 스타일 */
+.ebook-row {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+    gap: 20px;
+}
+
+.ebook-main {
+    border-radius: 24px;
+    padding: 26px 26px 22px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    color: #ffffff;
+    box-shadow: 0 24px 45px rgba(248, 113, 113, 0.4);
+}
+
+.ebook-main h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.ebook-main p {
+    margin: 0 0 12px;
+    font-size: 14px;
+}
+
+.ebook-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ebook-side {
+    display: grid;
+    gap: 10px;
+}
+
+.ebook-side-card {
+    border-radius: 18px;
+    padding: 16px 16px 14px;
+    background-color: #ffffff;
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.06);
+}
+
+.ebook-side-card h4 {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #111827;
+}
+
+.ebook-side-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .hero-content--wide {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .ebook-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+
+
